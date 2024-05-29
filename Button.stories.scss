@@ -1,0 +1,14 @@
+@import '../theme/styles/variables.scss';
+
+.stories__button {
+  .bgDark {
+    background-color: $color-primary;
+    padding: 32px;
+  }
+  .bg {
+    padding: 32px;
+  }
+  .margin {
+    margin: 8px;
+  }
+}

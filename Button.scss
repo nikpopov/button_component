@@ -1,0 +1,204 @@
+@import "../theme/styles/variables.scss";
+
+.button {
+    height: 36px;
+
+     span.MuiButton-label {
+        font-family: 'SiriMedium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+    }
+
+    &.MuiButton-root {
+        border-radius: 21px;
+        padding: 5px 20px;
+    }
+
+    &.MuiButton-containedSecondary {
+        background-color: $color-secondary;
+    }
+
+    &.MuiButton-outlinedSecondary {
+        color: $color-secondary;
+        border: 1px solid $color-secondary;
+    }
+
+    &.MuiButton-textSecondary {
+        color: $color-secondary;
+        border: none ;
+    }
+
+    &:active.MuiButton-contained {
+        background-color: $color-secondary;
+    }
+
+    &.MuiButton-contained:hover {
+        background-color: rgba(red($color-secondary), green($color-secondary), blue($color-secondary), 0.92)
+    }
+
+    &:hover.MuiButton-outlined {
+        background-color: hover($color-secondary);
+        border: 1px solid $color-secondary;
+    }
+
+    &:hover.MuiButton-text {
+        background-color: hover($color-secondary);
+        border: none ;
+    }
+
+    &:focus {
+        &.MuiButton-contained {
+            background-color: rgba(red($color-secondary), green($color-secondary), blue($color-secondary), 0.88)
+        }
+
+        &.MuiButton-outlined {
+            background-color: focus($color-secondary);
+        }
+
+        &.MuiButton-text {
+            background-color: focus($color-secondary);
+        }
+    }
+
+    &:disabled {
+        &.MuiButton-contained {
+            color: disabled($color-black);
+            background-color: disabledBackground($color-black);
+        }
+
+        &.MuiButton-contained {
+            color: disabled($color-black);
+        }
+
+        &.MuiButton-outlined {
+            color: disabled($color-black);
+            border: 1px solid disabled($color-black);
+        }
+        &.MuiButton-text {
+            color: disabled($color-black);
+            border: none ;
+        }
+    }
+}
+
+.button-invert {
+    height: 36px;
+
+    span.MuiButton-label {
+        font-family: 'SiriMedium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+    }
+
+    &.MuiButton-root {
+        border-radius: 21px;
+        color: $color-tertiary;
+        border: 1px solid $color-tertiary;
+        padding: 5px 20px;
+
+        &.MuiButton-text {
+            border: none ;
+        }
+    }
+
+    &:disabled.MuiButton-outlined {
+      color: darkLowEmphasis($color-white);
+      border: 1px solid darkLowEmphasis($color-white);
+    }
+
+    &:disabled.MuiButton-contained {
+      color: darkLowEmphasis($color-white);
+      background-color: disabledBackground($color-white);
+      border: none;
+    }
+
+    &:disabled.MuiButton-text {
+        color: darkLowEmphasis($color-white);
+        border: none ;
+    }
+
+    &:active.MuiButton-outlined {
+      color: $color-tertiary;
+      border: 1px solid $color-tertiary;
+    }
+
+    &:active.MuiButton-text {
+        color: $color-tertiary;
+        border: none ;
+    }
+
+    &:hover.MuiButton-outlined {
+      background-color: hover($color-tertiary);
+      border: 1px solid $color-tertiary;
+    }
+
+    &:hover.MuiButton-text {
+        background-color: hover($color-tertiary);
+        border: none ;
+    }
+
+    &:focus.MuiButton-outlined {
+      background-color: hover($color-tertiary);
+      border: 1px solid $color-tertiary;
+    }
+
+    &:focus.MuiButton-text {
+        background-color: hover($color-tertiary);
+        border: none ;
+    }
+}
+
+.icon {
+    &.MuiIconButton-colorSecondary {
+        color: rgba($color-black, 0.6);
+    }
+
+    &:hover.MuiFab-secondary {
+      background-color: rgba($color-secondary, 0.6);
+    }
+
+    &:focus.MuiFab-secondary {
+      background-color: rgba($color-secondary, 0.38);
+    }
+
+    &:hover.MuiIconButton-colorSecondary {
+      background-color: rgba($color-primary, 0.08);
+    }
+}
+
+.icon-invert {
+    &.MuiIconButton-colorSecondary {
+        color: rgba($color-white, 0.7);
+    }
+
+    &:hover.MuiFab-secondary {
+      background-color: $color-tertiary;
+    }
+
+    &:hover.MuiIconButton-colorSecondary {
+      background-color: rgba($color-white, 0.08);
+    }
+
+}
+
+.icon-fab {
+    &.MuiFab-secondary {
+        background-color: $color-secondary;
+    }
+
+    &:hover.MuiFab-secondary {
+        background-color: rgba($color-secondary, 0.92);
+    }
+
+    &:focus.MuiFab-secondary {
+        background-color: rgba($color-secondary, 0.88);
+    }
+}
