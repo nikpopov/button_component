@@ -1,2 +1,2 @@
 # button_component
-Button components based on Material UI used in React project
+Button components based on Material UI, StoryBook and can be used in React project
